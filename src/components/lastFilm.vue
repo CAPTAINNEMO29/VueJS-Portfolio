@@ -7,39 +7,27 @@
       dark
       color="blue lightnen-2"
     >
-      <v-toolbar-title>Music</v-toolbar-title>
+      <v-toolbar-title>Movies</v-toolbar-title>
     </v-app-bar>
-    <v-container>
-      <v-row dense>
-        <v-col cols="12">
-          <v-card
-          class = "my-4"
-            color= "yellow darken-4"
-            dark
-          >
-            <v-card-title class="headline">Watch the last film now</v-card-title>
-            <v-card-subtitle>Listen to your favorite artists and albums whenever and wherever, online and offline.</v-card-subtitle>
-            <v-card-actions>
-              <router-link class="link my-2 white--text" to="/lastFilm">Watch Now</router-link>
-            </v-card-actions>
-          </v-card>
-          <v-card
-            color= "yellow darken-4"
-            dark
-          >
-            <v-card-title class="headline">Watch the last film now</v-card-title>
-            <v-card-subtitle>Listen to your favorite artists and albums whenever and wherever, online and offline.</v-card-subtitle>
-            <v-card-actions>
-                <router-link class="link my-2 white--text" to="/lastFilms">Watch Now</router-link>
-            </v-card-actions>
-          </v-card>
-        </v-col>
-      </v-row>
-    </v-container>
+    <div>
+    <film v-bind:peliculas="peliculas"></film>
+    </div>
   </v-card>
 </template>
 <script>
+import film from "./film";
 export default {
     name: 'lastFilm',
+    components: {
+      film
+    },
+    data(){
+      return{
+        peliculas: [
+          {title: "aquaman", year: "2019"},
+          {title: "endgame", year: "2019"}
+        ]
+      }
+    }
 }
 </script>
