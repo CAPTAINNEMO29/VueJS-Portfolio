@@ -14,6 +14,9 @@
             <v-card-actions>
               <router-link class="link my-2 white--text" to="/lastFilm">Watch Now</router-link>
             </v-card-actions>
+            <input type="button" value="favorita"
+            @click="pasarFavorita(pelicula)"
+             />
           </v-card>
         </v-col>
       </v-row>
@@ -28,6 +31,11 @@ export default {
         peliculas: {
             type: Array
         }
+    },
+    methods: {
+      pasarFavorita(pelicula){
+        this.$emit('favorita', pelicula);
+      }
     }
 }
 </script>
