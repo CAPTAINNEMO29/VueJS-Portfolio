@@ -44,7 +44,9 @@
             tile
             size="100"
             color="red"
-            ></v-list-item-avatar>
+            >
+            <v-img src="../assets/films.jpg" alt="" />
+            </v-list-item-avatar>
             <v-list-item-content>
               {{ Films }}
               <router-link class="link" to="/movies">Movies</router-link>

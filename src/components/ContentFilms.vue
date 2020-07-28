@@ -13,10 +13,13 @@
       <v-row dense>
         <v-col cols="12">
           <v-card
-            color= "yellow darken-4"
+            color= "deep-purple darken-3"
             dark
           >
             <v-card-title class="headline">The last premieres.</v-card-title>
+            <v-img class= "logo mb-4" src="../assets/films.jpg" alt=""
+            gradient=""
+             />
             <v-card-subtitle>Take a look at the latest premieres.</v-card-subtitle>
           <v-card-actions>
               <router-link class="link my-2 white--text" to="/lastFilm">Watch Now</router-link>
