@@ -33,8 +33,8 @@ export default {
       return{
         favorita: null,
         peliculas: [
-          {title: "aquaman", year: "2019"},
-          {title: "endgame", year: "2019"}
+          {title: "aquaman", year: "2019", image: "Aquaman.jpg"},
+          {title: "endgame", year: "2019", image: "endgame.jpg"}
         ]
       }
     },
