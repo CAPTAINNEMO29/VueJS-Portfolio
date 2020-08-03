@@ -40,7 +40,7 @@
         <v-col cols="6">
           <v-card max-width="800" max-height="400" class="mx-auto" color="yellow">
             <v-card-title class="headline"
-              >o aquellos.</v-card-title
+              >cambiando de rama.</v-card-title
             >
           </v-card>
         </v-col>
