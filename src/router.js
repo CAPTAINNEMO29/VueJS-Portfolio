@@ -7,6 +7,7 @@ import ContentGames from './components/ContentGames';
 import ContentAnime from './components/ContentAnime';
 import lastMusic from './components/lastMusic';
 import lastFilm from './components/lastFilm';
+import lastAnime from './components/lastAnime';
     
 Vue.use(VueRouter)
 const routes = [
@@ -44,6 +45,11 @@ const routes = [
         path: "/lastFilm",
         name: "lastFilm",
         component: lastFilm
+      },
+      {
+        path: "/lastAnime",
+        name: "lastAnime",
+        component: lastAnime
       },
       {
         path: "/home",

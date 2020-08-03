@@ -25,12 +25,6 @@
             <v-card-actions>
               <router-link class="link my-2 white--text" to="/lastMusic">Listen Now</router-link>
             </v-card-actions>
-            <!--
-            <v-text-field class="texto" :value="string | stringFormat" :rules="rules" v-model="name"></v-text-field>
-            <img  v-if="name == rockMusicStyle"  class= "logo" src="../assets/rock.jpg" alt="" />
-            <img  v-else-if="name == popkMusicStyle"  class= "logo" src="../assets/pop.jpg" alt="" />
-            <img  v-else=""  class= "logo" src="" alt="" />
-            -->
           </v-card>
           <v-card
           class="mb-2"
@@ -83,26 +77,6 @@ export default {
         },
       ]
     }),
-    /*
-      computed:{
-        selectedMusicStyle(){
-          return this.musicStyles.find(musicStyle => musicStyle.name === this.name)
-      },*/
-      /*
-      rockMusicStyle(){
-          return this.musicStyles.find(musicStyle => musicStyle.name === 'rock')
-      },
-      popkMusicStyle(){
-          return this.musicStyles.find(musicStyle => musicStyle.name === 'pop')
-      }
-      */
-      /*computed: {
-        filteredList() {
-          return this.musicStyles.filter(musicStyle => {
-          return musicStyle.name.toLowerCase().includes(this.search.toLowerCase())
-      })
-    }
-  }*/
 }
 </script>
 

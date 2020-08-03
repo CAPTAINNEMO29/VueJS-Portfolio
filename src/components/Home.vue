@@ -88,7 +88,9 @@
             tile
             size="100"
             color="purple"
-            ></v-list-item-avatar>
+            >
+            <v-img src="../assets/Hina.jpg" alt="" />
+            </v-list-item-avatar>
             <v-list-item-content id="app">
               {{ Anime }}
               <router-link class="link" to="/anime">Anime</router-link>
